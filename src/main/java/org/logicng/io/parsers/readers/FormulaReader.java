@@ -26,7 +26,7 @@
 //                                                                       //
 ///////////////////////////////////////////////////////////////////////////
 
-package org.logicng.io.readers;
+package org.logicng.io.parsers.readers;
 
 import org.logicng.formulas.Formula;
 import org.logicng.formulas.FormulaFactory;
