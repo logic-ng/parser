@@ -26,7 +26,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.logicng</groupId>
-  <artifactId>logicng-parser-j8</artifactId>
+  <artifactId>logicng-parser-j11</artifactId>
   <version>2.5.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
@@ -56,21 +56,21 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
 
     <sonar.language>java</sonar.language>
     <sonar.exclusions>**/LogicNGPropositional*.java,**/LogicNGPseudoBoolean*.java</sonar.exclusions>
 
     <!-- Dependency Versions -->
-    <version.antlr>4.9.3</version.antlr>
+    <version.antlr>4.13.1</version.antlr>
     <version.junit>5.10.2</version.junit>
     <version.assertj>3.25.3</version.assertj>
     <!-- Version 5.x requires Java 11 -->
     <version.mockito>4.11.0</version.mockito>
 
     <!-- Plugin Versions -->
-    <version.antlr-plugin>4.9.3</version.antlr-plugin>
+    <version.antlr-plugin>4.13.1</version.antlr-plugin>
     <version.jacoco>0.8.11</version.jacoco>
     <version.coveralls>4.3.0</version.coveralls>
     <version.surefire>3.2.5</version.surefire>
@@ -123,7 +123,6 @@
             </manifest>
             <manifestEntries>
               <Built-By>BooleWorks GmbH</Built-By>
-              <Automatic-Module-Name>logicng-parser-j8</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
@@ -208,7 +207,7 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
+            <Bundle-RequiredExecutionEnvironment>JavaSE-11</Bundle-RequiredExecutionEnvironment>
           </instructions>
         </configuration>
       </plugin>

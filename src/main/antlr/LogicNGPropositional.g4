@@ -32,7 +32,7 @@ options {
   superClass = ParserWithFormula;
 }
 
-@parser::header {
+@header {
   package org.logicng.io.parsers;
 
   import java.util.LinkedHashSet;
@@ -43,12 +43,6 @@ options {
   public Formula getParsedFormula() {
     return formula().f;
   }
-}
-
-@lexer::header {
-  package org.logicng.io.parsers;
-
-  import org.logicng.formulas.FormulaFactory;
 }
 
 formula returns [Formula f]
@@ -95,4 +89,3 @@ OR       : '|';
 IMPL     : '=>';
 EQUIV    : '<=>';
 WS       : [ \t\r\n]+ -> skip;
-
