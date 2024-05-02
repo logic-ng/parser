@@ -1,7 +1,7 @@
 ![build](https://github.com/logic-ng/parser/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/logic-ng/parser/branch/development/graph/badge.svg)](https://codecov.io/gh/logic-ng/parser) ![License](https://img.shields.io/badge/license-Apache%202-ff69b4.svg) [![Maven Central](https://img.shields.io/maven-central/v/org.logicng/logicng-parser-j8.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.logicng%22%20AND%20a:%22logicng-parser-j8%22)
 
 
-<a href="https://www.logicng.org"><img src="https://github.com/logic-ng/parser/blob/master/doc/logo/logo_big.png" alt="logo" width="300"></a>
+<a href="https://www.logicng.org"><img src="https://github.com/logic-ng/LogicNG/blob/master/doc/logo/logo_big.png" alt="logo" width="300"></a>
 
 ## Introduction
 
