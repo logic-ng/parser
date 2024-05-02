@@ -27,8 +27,12 @@
 
   <groupId>org.logicng</groupId>
   <artifactId>logicng-parser-j11</artifactId>
-  <version>2.5.0-SNAPSHOT</version>
+  <version>2.5.0</version>
   <packaging>bundle</packaging>
+
+  <name>LogicNG ANTLR Parser</name>
+  <description>An ANTLR Parser for LogicNG</description>
+  <url>https://www.logicng.org</url>
 
   <licenses>
     <license>
@@ -72,7 +76,6 @@
     <!-- Plugin Versions -->
     <version.antlr-plugin>4.13.1</version.antlr-plugin>
     <version.jacoco>0.8.11</version.jacoco>
-    <version.coveralls>4.3.0</version.coveralls>
     <version.surefire>3.2.5</version.surefire>
     <version.nexus-staging>1.6.8</version.nexus-staging>
     <version.maven-gpg>1.6</version.maven-gpg>
@@ -123,6 +126,7 @@
             </manifest>
             <manifestEntries>
               <Built-By>BooleWorks GmbH</Built-By>
+              <Automatic-Module-Name>logicng-parser-j11</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
@@ -209,18 +213,6 @@
           <instructions>
             <Bundle-RequiredExecutionEnvironment>JavaSE-11</Bundle-RequiredExecutionEnvironment>
           </instructions>
-        </configuration>
-      </plugin>
-
-      <!-- Coveralls.io test coverage -->
-      <plugin>
-        <groupId>org.eluder.coveralls</groupId>
-        <artifactId>coveralls-maven-plugin</artifactId>
-        <version>${version.coveralls}</version>
-        <configuration>
-          <sourceDirectories>
-            <sourceDirectory>target/generated-sources/antlr</sourceDirectory>
-          </sourceDirectories>
         </configuration>
       </plugin>
 
