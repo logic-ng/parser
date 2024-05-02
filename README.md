@@ -30,6 +30,7 @@ For parsing a formula, you just create one of the two parsers and call `parse` o
 import org.logicng.formulas.Formula;
 import org.logicng.formulas.FormulaFactory;
 import org.logicng.io.parsers.PropositionalParser;
+import org.logicng.io.parsers.PseudoBooleanParser;
 
 FormulaFactory f = new FormulaFactory();
 PropositionalParser propositionalParser = new PropositionalParser(f);
